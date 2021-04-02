@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: none !important;
+  font-family: "Mouse Memoirs", sans-serif;
+}
+
+:root {
+  --body-bg: white;
+  --font-color: #1a1a1a;
+}
+
+.dark-mode:root {
+  --body-bg: #25262a;
+  --font-color: #d2d2d2;
+}
+
+.toggle.ios,
+.toggle-on.ios,
+.toggle-off.ios {
+  border-radius: 20rem;
+}
+
+.toggle.ios .toggle-handle {
+  border-radius: 20rem;
+}
+
+.light-mode-toggle {
+  color: #f39c12;
+  font-size: 12pt;
+}
+
+.dark-mode-toggle {
+  color: white;
+  font-size: 12pt;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body {
+  padding: 10px;
+  background-color: var(--body-bg) !important;
+  color: var(--font-color) !important;
+}
+
+.page-logo {
+  width: 140px;
+  height: 28px;
+  background-color: rgba(203, 33, 222, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 15px;
+  font-size: 4.5em;
+}
+
+button {
+  padding: 10px;
+  border: none !important;
+  border-radius: 5px !important;
+}
+
+#btnSortear {
+  padding: 10px;
+  background-color: #8227a8;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+.estatisticas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80vw;
+  padding: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+i {
+  font-size: 60px;
+  margin-right: 20px;
+  color: #8227a8;
+}
+
+#placar,
+#quantidade-cartas {
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 24px !important;
+}
+
+#cartas {
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+  justify-content: space-between;
+}
+#carta-jogador,
+#carta-maquina {
+  width: 20vw;
+  height: 25vw;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#opcoes-carta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#botoes-inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.btnAtributo {
+  padding: 10px;
+  background-color: #8227a8;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-right: 10px;
+  letter-spacing: 1px;
+}
+
+#btnProximaRodada {
+  background-color: #39054f;
+  color: #c1c1c1;
+  padding: 10px;
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  width: 50vw;
+}
+
+#resultado {
+  margin-top: -50px;
+}
+.resultado-final {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  font-size: -20px !important;
+}
+
+.resultado-final-frase {
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  font-size: -20px !important;
+  color: #8227a8;
+}
+
+.--spacing {
+  margin-left: 2.5rem;
+}
+
+@media (max-width: 599px) {
+  /* smartphones, Android phones, landscape iPhone */
+  #cartas {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    justify-content: center;
+  }
+  #carta-jogador,
+  #carta-maquina {
+    width: 70vw;
+    height: 90vw;
+    margin-top: 10px;
+  }
+  #resultado {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 600px) {
+  #cartas {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    justify-content: center;
+  }
+  #carta-jogador,
+  #carta-maquina {
+    width: 70vw;
+    height: 90vw;
+    margin-top: 10px;
+  }
+  #resultado {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 801px) {
+  #cartas {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    justify-content: space-between;
+  }
+  #carta-jogador,
+  #carta-maquina {
+    width: 40vw;
+    height: 55vw;
+    margin-top: 10px;
+  }
+  #resultado {
+    margin-top: -50px;
+  }
+}
+
+@media (min-width: 1025px) {
+  #cartas {
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    justify-content: space-between;
+  }
+  #carta-jogador,
+  #carta-maquina {
+    width: 23vw;
+    height: 30vw;
+    margin-top: 10px;
+  }
+  #resultado {
+    margin-top: -50px;
+  }
+}
